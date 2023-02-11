@@ -12,6 +12,9 @@
 </head>
 <body>
 
+  
+
+
     <header class="header" id="header">
 
         <nav class="navbar-desktop">
@@ -28,7 +31,7 @@
             </ul>
 
         </nav>
-
+        <!--  -->
         <nav class="navbar-mobile">
 
             <div class="open-close">
@@ -68,14 +71,15 @@
 
     <main class="products">
 
+
       <header class="products-header">
         <hr>
         <h3>Online Shop</h3>
       </header>
 
+
       <section class="products-grid">
-
-
+<!-- 
         <article class="products-box">
 
           <div class="product-img">
@@ -155,8 +159,8 @@
           </div>
 
         </article>
-        
-        <article class="products-box">
+         -->
+        <article class="products-box" id="sport">
 
           <div class="product-img">
             <img src="../public/img/items/w480 (3).webp" alt="">
@@ -184,7 +188,7 @@
 
         </article>
         
-        <article class="products-box">
+        <article class="products-box" id="sport">
 
           <div class="product-img">
             <img src="../public/img/items/w480 (4).webp" alt="">
@@ -241,6 +245,10 @@
         
 
       </section>
+
+      
+
+
     </main>
 
 
@@ -328,4 +336,74 @@
 
 
 </body>
+
+
+<script>
+  const container = document.querySelector(".products-grid");
+
+  const rutaImage = "../public/img/items/";
+  const rutaIcons = "../public/img/icons/ticket buy.svg";
+  const listOfImages = [
+      ["w480 (3).webp", 140],
+      
+  ];
+  listOfImages.forEach(data=>{
+
+      const article = document.createElement("article");
+      article.classList.add("products-box");
+      article.id = "sport";
+      
+      const divProductImg = document.createElement("div");
+      divProductImg.classList.add("product-img")
+      
+      const imageProductImg = document.createElement("img");
+      imageProductImg.src =rutaImage+data[0];
+      divProductImg.appendChild(imageProductImg);
+      
+      const divProductBuy = document.createElement("div");
+      divProductBuy.classList.add("product-buy");
+
+      const divProductText = document.createElement("div");
+      divProductText.classList.add("product-text");
+
+      const pText = document.createElement("p");
+      pText.textContent = "Lorem, ipsum dolor.";
+
+      const divProductPrice = document.createElement("div");
+      divProductPrice.classList.add("product-price");
+
+      const pPrice = document.createElement("p");
+      pPrice.textContent = String(data[1])+"$";
+
+      const divProductBtn = document.createElement("div");
+      divProductBtn.classList.add("product-btn");
+
+      const aLink = document.createElement("a");
+      aLink.href = "";
+
+      const imageIcons = document.createElement("img");
+      imageIcons.src = rutaIcons;
+
+      aLink.appendChild(imageIcons);
+      divProductBtn.appendChild(aLink);
+
+      divProductPrice.appendChild(pPrice);
+      divProductPrice.appendChild(divProductBtn);
+
+      divProductText.appendChild(pText);
+      divProductText.appendChild(divProductPrice);
+
+      divProductBuy.appendChild(divProductText);
+
+      article.appendChild(divProductImg);
+      article.appendChild(divProductBuy);
+
+      container.appendChild(article);
+  })
+      
+
+
+
+
+</script>
 </html>
