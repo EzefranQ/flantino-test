@@ -665,7 +665,7 @@ h3{
     text-align: center;
 }
 
-@media screen and (max-width: 1920px) {
+/* @media screen and (max-width: 1920px) {
     .about-skew{
         height: 330px;
     }
@@ -685,7 +685,7 @@ h3{
         width: 100%;
         scale: 1.4;
     }
-}
+} */
 
 
 .about-wrapp{
