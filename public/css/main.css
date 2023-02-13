@@ -684,7 +684,9 @@ h3{
     .about-skew img{
         width: 100%;
         scale: 1.4;
+        height: 1000px;
     }
+
 }
 
 
