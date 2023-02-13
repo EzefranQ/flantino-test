@@ -635,6 +635,7 @@ h3{
     margin-bottom: 100px;
 }
 .about-skew{
+    width: 100%;
     height: 330px;
     transform: skewY(-10deg); 
     overflow: hidden;
