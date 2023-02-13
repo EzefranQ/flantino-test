@@ -673,22 +673,17 @@ h3{
         height: 800px;
     }
 }
-@media screen and (max-width: 3000px) {
-    .about-skew img{
-        width: 100%;
-        scale: 1.5;
-    }
-}
+
 @media screen and (max-width: 1400px) {
     .about-skew img{
         width: 100%;
-        scale: 1.2;
+        scale: 1.4;
     }
 }
 @media screen and (max-width: 910px) {
     .about-skew img{
         width: 100%;
-        scale: 1.4;
+        scale: 1.6;
     }
 }
 
