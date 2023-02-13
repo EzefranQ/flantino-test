@@ -677,13 +677,13 @@ h3{
 @media screen and (max-width: 1400px) {
     .about-skew img{
         width: 100%;
-        scale: 1.4;
+        scale: 1.2;
     }
 }
 @media screen and (max-width: 910px) {
     .about-skew img{
         width: 100%;
-        scale: 1.6;
+        scale: 1.4;
     }
 }
 
