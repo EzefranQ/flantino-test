@@ -686,11 +686,9 @@ h3{
 @media screen and (max-width: 500px) {
     .about-skew img{
         scale: 3;    
-        margin-top: -120px;
+        margin-top: -300px;
         height: 900px;
-        width: 100%;
         object-fit: cover;
-        transform: skewY(10deg);
     }
 }
 
