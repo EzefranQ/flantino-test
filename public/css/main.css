@@ -686,7 +686,7 @@ h3{
 @media screen and (max-width: 500px) {
     .about-skew img{
         scale: 3;    
-        margin-top: -300px;
+        margin-top: 0px;
         height: 900px;
         object-fit: cover;
     }
