@@ -169,16 +169,16 @@ body::-webkit-scrollbar-thumb{
 
 .home{
     width: 100%;
-    height: 700px;
+    height: 100vh;
     background: url(../img/bg-home_1_11zon-min_11zon.webp) center;
     top: 0;
     z-index: -1;
     display: grid;
     background-size: cover;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 .home .home-text{
-    grid-row: 4;
+    grid-row: 5;
     margin: 0 auto;
     text-align: center;
     color: #fff;
