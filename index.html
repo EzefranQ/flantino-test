@@ -4,66 +4,277 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flantino Milano - Lenguaje</title>
-
-
     
-    <link rel="stylesheet" href="public/css/main.css">
-    <link rel="stylesheet" href="public/css/lenguaje.css">
+    <script src="../public/js/index.js" defer></script>
+    <link rel="stylesheet" href="../public/css/main.css">
+    
+    <title>Flantino Milano</title>
 </head>
-<body class="bdy-lenguaje">
-    
+<body>
 
-    <div class="container lenguaje">
+    <header class="header" id="header">
 
-        <section class="select-lenguaje">
+        <nav class="navbar-desktop">
 
-            <div class="lenguaje-text">
-
-                <header class="header-lenguaje">
-                    <h1>Flantino Milano</h1>
-                </header>
-                
-                <ul class="list-lenguaje">
-                    <div class="list-r">
-                        <a href="view/home.html">
-                            <li class="item-lengauje">Deutsche</li>
-                        </a>
-                        <hr>
-                        
-                        <a href="view/home.html">
-                            <li class="item-lengauje">Italian</li>
-                        </a>
-                        <hr>
-                        
-                        <a href="view/home.html">
-                            <li class="item-lengauje">English</li>
-                        </a>
-                        <hr>
-                    </div>
-                    <div class="list-l">
-                        <a href="view/home.html">
-                            <li class="item-lengauje">Spanish</li>
-                        </a>
-                        <hr>
-                        <a href="view/home.html">
-                            <li class="item-lengauje">Chinese</li>
-                        </a>
-                    </div>
-                </ul>
-
-                
+            <div class="logo">
+                <img src="../public/img/icons/test-logo_3_11zon-min.png" alt="">
             </div>
+
+            <ul class="navbar-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+
+            </ul>
+
+        </nav>
+
+        <nav class="navbar-mobile">
+
+            <div class="open-close">
+
+                <div class="logo">
+                    <img src="../public/img/icons/test-logo_3_11zon-min.png" alt="">
+                </div>
+
+                <div class="toggle-btn" id="toggleBtn">
+                    <img src="../public/img/icons/Menu-Bar Line.svg" alt="">
+                </div>
+
+            </div>
+
+            <ul class="navbar-list hidden" id="hidden">
+
+                <li><a href="#">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-text">
+            <h1 id="h1">Nunca dejes 
+                <span>de ser <span style="color: red;">original </span></span>
+            </h1>
+            <p>Flantino <span style="color: red;">Moda</span> para todos</p>
+        </div>
+    </section>
+
+    <section class="article-grid">
+
+        <header class="header-grid">
+            <hr>
+            <h3>Tendencias</h3>
+        </header>
+
+        <div class="container-article">
+        
+            <article class="article-box" id="first-article">
+
+                <div class="article-text">
+                    <p>PARA CUALQUIER OCASIÓN</p>
+                    <h1>SASTRERÍA MODERNA</h1>
+                    <div class="btns">
+                        <a class="article-btn" href="">Ordena YA!</a>
+                        <a class="article-btn" href="">Contáctenos</a>
+                    </div>
+                </div>
                 
+            </article>
+
+            <article class="article-box" id="second-article">
+
+                <div class="article-text">
+                    <p> RENUEVE SU FONDO DE ARMARIO.</p>
+                    <h1>DESCUBRE LA COLECCIÓN</h1>
+                    <div class="btns">
+                        <a class="article-btn" href="">Ordena YA!</a>
+                        <a class="article-btn" href="">Contáctenos</a>
+                    </div>
+                </div>
+                
+            </article>
+
+        </div>
+
+    </section>
+
+    <main class="main-grid">
+
+        <header class="header-grid">
+            <hr>
+            <h3>Todo en Moda</h3>
+        </header>
+
+        <section class ="grid">
+
+            <article class="grid-box">
+
+                <div class="img-section">
+                    <img src="../public/grids-img/grid1-1.webp" alt="">
+                </div>
+
+                <div class="grid-text">
+
+                    <div class="txt-pd">
+                        <h3>Navega</h3>
+                        <p>Por la página, revisa nuestra lista de productos y encarga YA!</p>
+                        <a href="" class="btn">
+                            Contáctanos
+                        </a>
+                    </div>
+
+                </div>
+                    
+            </article>
+
+            <article class="grid-box grid-invert">
+
+                <div class="img-section">
+                    <img src="../public/grids-img/force-majeure-00tlc0clfrs-unsplash.webp" alt="">
+                </div>
+
+                <div class="grid-text">
+
+                    <div class="txt-pd">
+                        <h3>La mejor opción</h3>
+                        <p>Somos la mejor opción en moda, contamos con años de experiencia</p>
+                        <a href="" class="btn">
+                            Contáctanos
+                        </a>
+                    </div>
+
+                </div>
+                    
+            </article>
+
+            <article class="grid-box ">
+
+                <div class="img-section">
+                    <img src="../public/grids-img/brooke-cagle-keleigko7pu-unsplash.webp" alt="">
+                </div>
+
+                <div class="grid-text">
+
+                    <div class="txt-pd">
+                        <h3>Rapidez y seguridad</h3>
+                        <p>Comunícate con nosotros y encarga nuestros productos</p>
+                        <a href="" class="btn">
+                            Contáctanos
+                        </a>
+                    </div>
+
+                </div>
+                    
+            </article>
+
+            <article class="grid-box grid-invert">
+
+                <div class="img-section">
+                    <img src="../public/grids-img/andrew-neel-hqtywly9dxs-unsplash.webp" alt="">
+                </div>
+
+                <div class="grid-text">
+
+                    <div class="txt-pd">
+                        <h3>Nuevos productos</h3>
+                        <p>Contamos con una gran variedad de productos en moda</p>
+                        <a href="" class="btn">
+                            Contáctanos
+                        </a>
+                    </div>
+
+                </div>
+                    
+            </article>
         </section>
 
+    </main>
+
+    <footer class="footer">
+
+      <div class="footer-display">
+      
+        <div class="footer-about">
+
+            <div class="about-text">
+              <h2>Flantino Milano</h2>
+              <p>Encarga nuestra gran varidad de productos<br> y disfruta de Moda de calidad.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-nav">
+
+          <h2>Contact</h2>
+
+          <div class="footer-links">
+
+            <div class="footer-links-contact">
+              <div class="img-links">
+                <img src="../public/img/icons/Location.svg" alt="">
+              </div>
+              <div class="img-text-link">
+                <p>444. S. California</p>
+              </div>
+            </div>
+
+            <div class="footer-links-contact">
+              <div class="img-links">
+                <img src="../public/img/icons/Phone Call.svg" alt="">
+              </div>
+              <div class="img-text-link">
+                <p>+51 000 00 000</p>
+              </div>
+            </div>
+
+            <div class="footer-links-contact">
+              <div class="img-links">
+                <img src="../public/img/icons/Mail.svg" alt="">
+              </div>
+              <div class="img-text-link">
+                <p>Flantino@company.com</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer-social-links">
+          
+          <h2>Síguenos</h2>
+
+          <div class="social-icon-container">
+
+            <div class="social-icon">
+              <img src="../public/img/icons/Facebook.svg" alt="">
+            </div>
+            <div class="social-icon">
+              <img src="../public/img/icons/Instagram.svg" alt="">
+            </div>
+            <div class="social-icon">
+              <img src="../public/img/icons/WhatsApp.svg" alt="">
+            </div>
+            
+          </div>
+
+        </div>
 
     </div>
+      <div class="legal">
+        <p>&copy; 2023 Flantino Milano. Todos los derechos reservados.</p>
+      
+        <div class="legal__links">
+          <span>Página Hecha por: Ezefran</span>
+        </div>
 
+      </div>
 
-    <!-- <audio controls autoplay>
-        <source src="/public/music/jazz.mp3" type="audio/mpeg">
-    </audio> -->
+    </footer>
+
 
 </body>
 </html>
